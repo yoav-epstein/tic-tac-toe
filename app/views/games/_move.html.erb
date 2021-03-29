@@ -1,0 +1,16 @@
+<%= form_for @game do |form| %>
+  <% if alert %>
+    <div id="error_explanation">
+      <%= alert %>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :move %>
+    <%= form.number_field :move, min: 1, max: 9 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

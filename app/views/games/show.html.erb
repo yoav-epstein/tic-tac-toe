@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<% if @game.in_progress? %>
+
+  <h1>Game <%= @game.id %></h1>
+
+  <p>
+    <%= render 'board', game: @game %>
+    <%= render 'instructions', game: @game %>
+    <%= render 'move', game: @game %>
+  </p>
+
+<% else %>
+
+  <p>
+    <strong>Status:</strong>
+    <%= @game.status %>
+
+    <%= render 'board', game: @game %>
+  </p>
+
+<% end %>
+
+<%= link_to 'Back', games_path %>

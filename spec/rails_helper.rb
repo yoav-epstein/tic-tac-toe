@@ -64,3 +64,9 @@ RSpec.configure do |config|
 
   config.include FactoryBot::Syntax::Methods
 end
+
+require 'capybara/rails'
+require 'capybara/apparition'
+require 'capybara/rspec'
+
+Capybara.javascript_driver = :apparition

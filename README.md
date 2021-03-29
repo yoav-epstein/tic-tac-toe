@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+to setup the game, use the following
 
-Things you may want to cover:
+`rails db:migrate`
 
-* Ruby version
+to start the games,
 
-* System dependencies
+`rails server`
 
-* Configuration
+then use the browser to play at
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`localhost:3000`
